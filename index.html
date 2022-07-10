@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cash Register</title>
+</head>
+
+<body>
+    <div class="container flex">
+
+        <header>
+            <h1> Cash Register Manager </h1>
+        </header>
+
+        <!-- main -->
+        <main class="container flex">
+            <p class="details">Enter the bill amount and cash given by the customer and know the minimum number of notes
+                to return
+            </p>
+            <!-- output section -->
+            <div class="output hide">
+                <h3 id="bill-display">Bill amount:</h3>
+                <h3 id="cash-display">Amount to be returned:</h3>
+            </div>
+
+            <!-- input section -->
+            <div class="input-section">
+                <label for="bill-amount">Bill Amount:</label>
+                <input id="bill-amount" type="text" placeholder="Enter Bill Amount" />
+
+                <button id="btn-next">Next</button>
+
+                <label for="cash-given" class="hide">Cash Given:</label>
+                <input id="cash-given" class="hide" type="text" placeholder="Enter Cash Given" />
+
+                <button id="btn-check" class="hide">Check</button>
+            </div>
+
+            <!-- error section -->
+
+            <p id="error-message"></p>
+
+            <!-- table -->
+            <table>
+                <caption>Return Change ⬇️</caption>
+                <tr>
+                    <th>No of Notes</th>
+                    <td class="position"></td>
+                    <td class="position"></td>
+                    <td class="position"></td>
+                    <td class="position"></td>
+                    <td class="position"></td>
+                    <td class="position"></td>
+                    <td class="position"></td>
+                </tr>
+                <tr>
+                    <th>Notes</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </table>
+    </div>
+
+
+
+    </main>
+
+</body>
+
+<script src="/index.js"></script>
+
+</html>

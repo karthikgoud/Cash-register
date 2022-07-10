@@ -1,0 +1,130 @@
+/* Universal */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 50vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.hide{
+    display: none;
+}
+
+/* Header section */
+
+header{
+    background-color: lightcoral;
+    height: 10vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(13, 12, 12);
+}
+
+/* Main section */
+
+main{
+    background-color: lightblue;
+    padding: 24px;
+}
+
+/* paragraph */
+.details{
+    padding: 16px 0;
+    font-size: larger;
+    text-align: center;
+    color: rgb(97, 5, 97);
+}
+
+/* output */
+.output{
+    display: flex;
+    justify-content: space-around;
+}
+.output h3{
+    padding: 16px 0;
+    font-size: 24px;
+}
+
+/* input section */
+
+input{
+    width: 50%;
+    padding: 8px;
+}
+
+button{
+    width: 50%;
+    padding: 4px;
+
+}
+
+.input-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.input-section label{
+    padding-bottom: 4px;
+    font-size: 20px;
+}
+
+.input-section input,button{
+    margin: 10px;
+}
+
+#btn-check{
+    text-align: center !important;
+}
+
+/* ---error--- */
+
+p{
+    text-align: center;
+    padding-bottom: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    color: red;
+}
+
+/* ---------table--------- */
+
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: larger;
+    padding: 4px;
+
+  }
+
+  th {
+    width: 20%;
+    background-color: rgb(168, 205, 168);
+  }
+
+  tr{
+    background-color: lightsteelblue;
+  }
+
+
+table caption{
+    padding-bottom: 24px;
+}
