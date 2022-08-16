@@ -50,7 +50,9 @@ function clickHandler() {
     changeToBeReturned(amountToBeReturned);
     cashOutput.innerText = `Amount to be returned: Rs ${amountToBeReturned}`;
   } else {
-    showMessage("Cash given should be greater than bill Amount ! NO DISCOUNT");
+    showMessage(
+      "Cash given should be greater than bill Amount or get ready to wash plates 🍽️🍽️🍽️"
+    );
   }
 }
 
