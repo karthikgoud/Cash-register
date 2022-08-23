@@ -41,14 +41,16 @@ function showSection() {
 function clickHandler() {
   const billValue = parseInt(billAmount.value, 10);
   const cashValue = parseInt(cashGiven.value, 10);
-  billOutput.innerText = `Bill amount: Rs ${billValue}`;
+  billOutput.innerHTML = `Bill amount: <span class ="bill-color">Rs ${billValue}.</span>`;
 
   hideMessage();
 
-  if (cashValue >= billValue) {
+  if (cashValue === billValue) {
+    showMessage("Bill is paid. Thank you");
+  } else if (cashValue >= billValue) {
     const amountToBeReturned = cashValue - billValue;
     changeToBeReturned(amountToBeReturned);
-    cashOutput.innerText = `Amount to be returned: Rs ${amountToBeReturned}`;
+    cashOutput.innerHTML = `Amount to be returned: <span class ="bill-color">Rs ${amountToBeReturned}.</span>`;
   } else {
     showMessage(
       "Cash given should be greater than bill Amount or get ready to wash plates 🍽️🍽️🍽️"
