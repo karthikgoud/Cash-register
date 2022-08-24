@@ -32,7 +32,7 @@ function showSection() {
     if (billValue < 0) {
       showMessage(" Invalid: Bill value can not be less than 0");
     } else {
-      showMessage("Invalid: Please enter number");
+      showMessage("Invalid : Please enter Bill Amount");
     }
   }
 }
@@ -45,16 +45,20 @@ function clickHandler() {
 
   hideMessage();
 
-  if (cashValue === billValue) {
-    showMessage("Bill is paid. Thank you");
-  } else if (cashValue >= billValue) {
-    const amountToBeReturned = cashValue - billValue;
-    changeToBeReturned(amountToBeReturned);
-    cashOutput.innerHTML = `Amount to be returned: <span class ="bill-color">Rs ${amountToBeReturned}.</span>`;
+  if (cashValue) {
+    if (cashValue === billValue) {
+      showMessage("Bill is paid. Thank you");
+    } else if (cashValue >= billValue) {
+      const amountToBeReturned = cashValue - billValue;
+      changeToBeReturned(amountToBeReturned);
+      cashOutput.innerHTML = `Amount to be returned: <span class ="bill-color">Rs ${amountToBeReturned}.</span>`;
+    } else {
+      showMessage(
+        "Cash given should be greater than bill Amount or get ready to wash plates 🍽️🍽️🍽️"
+      );
+    }
   } else {
-    showMessage(
-      "Cash given should be greater than bill Amount or get ready to wash plates 🍽️🍽️🍽️"
-    );
+    showMessage("Please enter Cash Given");
   }
 }
 
