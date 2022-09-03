@@ -22,7 +22,7 @@ function showSection() {
   if (
     billAmount &&
     billAmount.value &&
-    billAmount.value >= 0 &&
+    billAmount.value > 0 &&
     billAmount.value !== "string"
   ) {
     for (let i = 0; i < cashSection.length; i++) {
@@ -31,6 +31,8 @@ function showSection() {
   } else {
     if (billValue < 0) {
       showMessage(" Invalid: Bill value can not be less than 0");
+    } else if (billValue === 0) {
+      showMessage("Invalid : Bill amount should be greater than 0.");
     } else {
       showMessage("Invalid : Please enter Bill Amount");
     }
