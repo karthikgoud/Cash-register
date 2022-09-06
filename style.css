@@ -47,11 +47,7 @@ main{
     padding: 24px;
 }
 
-#bill-display{
-    color: blue;
-}
-
-#cash-display{
+#bill-display, #cash-display{
     color: blue;
 }
 
@@ -77,12 +73,6 @@ main{
     font-size: 24px;
 }
 
-#error-message{
-    background-color: yellow;
-    display: none;
-    padding: 10px;
-    margin-bottom: 10px;
-}
 
 /* input section */
 
@@ -99,6 +89,8 @@ button{
     color: white;
     font-weight: bolder;
     background: steelblue;
+    justify-content: center;
+
 
 }
 
@@ -116,27 +108,28 @@ button:hover{
     padding-bottom: 32px;
 }
 
-.input-section label{
+label{
     padding-bottom: 4px;
     font-size: 20px;
+    font-weight: 700;
 }
 
 .input-section input,button{
     margin: 10px;
 }
 
-#btn-check{
-    justify-content: center;
-}
-
 /* ---error--- */
 
-p{
+#error-message{
+    background-color: yellow;
+    display: none;
+    padding: 10px;
+    margin-bottom: 10px;
     text-align: center;
-    padding-bottom: 8px;
     font-size: 24px;
     font-weight: 700;
     color: red;
+    border-radius: 0.6rem;
 }
 
 /* ---------table--------- */
@@ -144,7 +137,6 @@ p{
 table, th, td {
     border: 1px solid;
     text-align: center;
-    border-collapse: collapse;
     font-size: larger;
     padding: 4px;
 
@@ -153,10 +145,13 @@ table, th, td {
   th {
     width: 20%;
     background-color: rgb(168, 205, 168);
+    color: black;
   }
 
   tr{
     background-color: lightsteelblue;
+    color: darkviolet;
+
   }
 
 
