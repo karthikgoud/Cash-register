@@ -5,5 +5,6 @@ A Cash Register App which tells how much change should be given back with minimu
 # Live link:
 https://cash-register-2022.netlify.app/
 
-<img width="735" alt="image" src="https://user-images.githubusercontent.com/9660782/188649814-e97c76b3-2187-4a5a-bb21-dd54818d8938.png">
+<img width="739" alt="image" src="https://user-images.githubusercontent.com/9660782/189159610-bcf9b47e-3be1-4689-9858-deb80bdb9ef0.png">
+
 
