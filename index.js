@@ -4,7 +4,7 @@ const checkButton = document.querySelector("#btn-check");
 const errorMessage = document.querySelector("#error-message");
 const positionOfNotes = document.querySelectorAll(".position");
 const nextButton = document.querySelector("#btn-next");
-const cashSection = document.querySelectorAll(".hide");
+const cashSection = document.querySelector(".hide");
 
 const billOutput = document.querySelector("#bill-display");
 const cashOutput = document.querySelector("#cash-display");
@@ -25,9 +25,7 @@ function showSection() {
     billAmount.value > 0 &&
     billAmount.value !== "string"
   ) {
-    for (let i = 0; i < cashSection.length; i++) {
-      cashSection[i].style.display = "flex";
-    }
+    cashSection.style.display = "flex";
   } else {
     if (billValue < 0) {
       showMessage(" Invalid: Bill value can not be less than 0");
@@ -49,7 +47,8 @@ function clickHandler() {
 
   if (cashValue) {
     if (cashValue === billValue) {
-      showMessage("Bill is paid. Thank you");
+      cashOutput.innerHTML = `Amount to be returned: <span class ="bill-color">Rs 0.</span>`;
+      showMessage("Bill is paid, Thank you. Have a great day !!!");
     } else if (cashValue >= billValue) {
       const amountToBeReturned = cashValue - billValue;
       changeToBeReturned(amountToBeReturned);

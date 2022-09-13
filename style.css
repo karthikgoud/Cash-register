@@ -9,9 +9,10 @@
     box-sizing: border-box;
 }
 
-/* .container-body{
-    width: 100%;
-} */
+body{
+    background-color: lightblue;
+
+}
 
 .container{
     width: 50%;
@@ -44,8 +45,11 @@ header{
 /* Main section */
 
 main{
-    background-color: lightblue;
     padding: 24px;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #bill-display, #cash-display{
@@ -61,7 +65,8 @@ main{
     padding: 16px 0;
     font-size: larger;
     text-align: center;
-    color: rgb(97, 5, 97);
+    color: black;
+    font-weight: 700;
 }
 
 /* output */
@@ -74,26 +79,24 @@ main{
     font-size: 24px;
 }
 
-
 /* input section */
 
 input{
     width: 50%;
     padding: 8px;
     border-radius: 0.4rem;
+    font-size: 1.2rem;
 }
 
 button{
-    width: 30%;
+    width: 25%;
     padding: 6px;
     border: none;
     border-radius: 4px;
     color: white;
-    font-weight: bolder;
+    font-weight: 700;
     background: steelblue;
     justify-content: center;
-
-
 }
 
 button:hover{
@@ -104,6 +107,14 @@ button:hover{
 
 .input-section{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.cash-section{
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -137,6 +148,13 @@ label{
 
 /* ---------table--------- */
 
+#table-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 table, th, td {
     border: 2px solid white;
     border-collapse: collapse;
@@ -144,18 +162,18 @@ table, th, td {
     font-size: larger;
     padding: 4px;
 
-  }
+}
 
-  th {
-    width: 20%;
-    background-color: rgb(168, 205, 168);
-    color: black;
-  }
+th {
+width: 20%;
+background-color: rgb(168, 205, 168);
+color: black;
+}
 
-  tr{
-    background-color: lightgreen;
+tr{
+background-color: lightgreen;
 
-  }
+}
 
 
 table caption{

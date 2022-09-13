@@ -16,35 +16,38 @@
     </header>
 
     <!-- main -->
-    <main class="flex">
-        <div class="container">
-            <p class="details">Enter the bill amount and cash given by the customer and know the minimum number of notes
-                to return
-            </p>
-            <!-- output section -->
-            <div class="output hide">
-                <h3 id="bill-display">Bill amount:</h3>
-                <h3 id="cash-display">Amount to be returned:</h3>
-            </div>
+    <main>
+        <p class="details">Enter the bill amount and cash given by the customer and know the minimum number of notes
+            to return
+        </p>
+        <!-- output section -->
+        <div class="output">
+            <h3 id="bill-display">Bill amount:</h3>
+            <h3 id="cash-display">Amount to be returned:</h3>
+        </div>
 
-            <!-- input section -->
-            <div class="input-section">
-                <label for="bill-amount">Bill Amount:</label>
-                <input id="bill-amount" type="number" placeholder="Enter Bill Amount" />
+        <!-- input section -->
+        <div class="input-section">
+            <label for="bill-amount">Bill Amount:</label>
+            <input id="bill-amount" type="number" placeholder="Enter Bill Amount" />
 
-                <button id="btn-next">Next</button>
+            <button id="btn-next">Next</button>
 
-                <label for="cash-given" class="hide">Cash Given:</label>
-                <input id="cash-given" class="hide" type="number" placeholder="Enter Cash Given" />
+        </div>
 
-                <button id="btn-check" class="hide">Check</button>
-            </div>
+        <div class="cash-section hide">
+            <label for="cash-given">Cash Given:</label>
+            <input id="cash-given" type="number" placeholder="Enter Cash Given" />
 
-            <!-- error section -->
+            <button id="btn-check">Check</button>
+        </div>
 
-            <p id="error-message"></p>
+        <!-- error section -->
 
-            <!-- table -->
+        <p id="error-message"></p>
+
+        <!-- table -->
+        <div id="table-div">
             <table>
                 <caption>Change to be returned ⬇️</caption>
                 <tr>
@@ -69,6 +72,7 @@
                 </tr>
             </table>
         </div>
+
     </main>
 
 </body>
