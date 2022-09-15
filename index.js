@@ -27,10 +27,8 @@ function showSection() {
   ) {
     cashSection.style.display = "flex";
   } else {
-    if (billValue < 0) {
-      showMessage(" Invalid: Bill value can not be less than 0");
-    } else if (billValue === 0) {
-      showMessage("Invalid : Bill amount should be greater than 0.");
+    if (billValue <= 0) {
+      showMessage(" Invalid: Bill amount should be greater than 0.");
     } else {
       showMessage("Invalid : Please enter Bill Amount");
     }
@@ -40,17 +38,17 @@ function showSection() {
 //--------- check button clicked----------
 function clickHandler() {
   const billValue = parseInt(billAmount.value, 10);
-  const cashValue = parseInt(cashGiven.value, 10);
+  const cashValue = cashGiven.value;
   billOutput.innerHTML = `Bill amount: <span class ="bill-color">Rs ${billValue}.</span>`;
 
   hideMessage();
 
   if (cashValue) {
-    if (cashValue === billValue) {
+    if (Number(cashValue) === billValue) {
       cashOutput.innerHTML = `Amount to be returned: <span class ="bill-color">Rs 0.</span>`;
-      showMessage("Bill is paid, Thank you. Have a great day !!!");
-    } else if (cashValue >= billValue) {
-      const amountToBeReturned = cashValue - billValue;
+      showMessage("Bill is paid, Thank you. Have a good day !!!");
+    } else if (Number(cashValue) >= billValue) {
+      const amountToBeReturned = Number(cashValue) - billValue;
       changeToBeReturned(amountToBeReturned);
       cashOutput.innerHTML = `Amount to be returned: <span class ="bill-color">Rs ${amountToBeReturned}.</span>`;
     } else {
