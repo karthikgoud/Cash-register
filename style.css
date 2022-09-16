@@ -11,13 +11,20 @@
 
 body{
     background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 100%;
-    margin: 0 auto;
 }
 
 .flex{
@@ -34,22 +41,24 @@ body{
 header{
     background-color: darkcyan;
     height: 10vh;
+    width: 100%;
     text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center;
-    /* color: rgb(13, 12, 12); */
+    justify-content: center;
     color: white;
 }
 
 /* Main section */
 
 main{
+    background-color: lightblue;
     padding: 24px;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 #bill-display, #cash-display{
@@ -110,7 +119,7 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 32px;
+    padding-bottom: 2rem;
 }
 
 .cash-section{
@@ -118,7 +127,7 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 32px;
+    padding-bottom: 2rem;
 }
 
 label{
@@ -165,17 +174,55 @@ table, th, td {
 }
 
 th {
-width: 20%;
-background-color: rgb(168, 205, 168);
-color: black;
+    width: 20%;
+    background-color: rgb(168, 205, 168);
+    color: black;
 }
 
 tr{
-background-color: lightgreen;
+    background-color: lightgreen;
 
 }
 
 
 table caption{
     padding-bottom: 24px;
+}
+
+/* media queries */
+
+@media (max-width:426px){
+
+    .container{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details{
+        font-size: 1rem;
+    }
+   
+    #bill-display, #cash-display{
+        font-size: 0.8rem;
+    }
+
+    input{
+
+        width: 50%;
+        font-size: 1rem;
+
+    }
+
+    
+    .input-section{
+        padding-bottom: 1rem;
+    }
+
+    .input-section input,button{
+        margin: 0.4rem;
+    }
+
+
+   
 }

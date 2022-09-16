@@ -10,70 +10,75 @@
 </head>
 
 <body>
-
     <header>
         <h1> Cash Register Manager </h1>
     </header>
 
-    <!-- main -->
-    <main>
-        <p class="details">Enter the bill amount and cash given by the customer and know the minimum number of notes
-            to return
-        </p>
-        <!-- output section -->
-        <div class="output">
-            <h3 id="bill-display">Bill amount:</h3>
-            <h3 id="cash-display">Amount to be returned:</h3>
-        </div>
+    <div class="container">
 
-        <!-- input section -->
-        <div class="input-section">
-            <label for="bill-amount">Bill Amount:</label>
-            <input id="bill-amount" type="number" placeholder="Enter Bill Amount" />
+        <!-- main -->
 
-            <button id="btn-next">Next</button>
+        <main>
+            <p class="details">Enter the bill amount and cash given by the customer and know the minimum number of notes
+                to return
+            </p>
+            <!-- output section -->
+            <div class="output">
+                <h3 id="bill-display">Bill amount:</h3>
+                <h3 id="cash-display">Amount to be returned:</h3>
+            </div>
 
-        </div>
+            <!-- input section -->
+            <div class="input-section">
+                <label for="bill-amount">Bill Amount:</label>
+                <input id="bill-amount" type="number" placeholder="Enter Bill Amount" />
 
-        <div class="cash-section hide">
-            <label for="cash-given">Cash Given:</label>
-            <input id="cash-given" type="number" placeholder="Enter Cash Given" />
+                <button id="btn-next">Next</button>
 
-            <button id="btn-check">Check</button>
-        </div>
+            </div>
 
-        <!-- error section -->
+            <div class="cash-section hide">
+                <label for="cash-given">Cash Given:</label>
+                <input id="cash-given" type="number" placeholder="Enter Cash Given" />
 
-        <p id="error-message"></p>
+                <button id="btn-check">Check</button>
+            </div>
 
-        <!-- table -->
-        <div id="table-div">
-            <table>
-                <caption>Change to be returned ⬇️</caption>
-                <tr>
-                    <th>No of Notes</th>
-                    <td class="position"></td>
-                    <td class="position"></td>
-                    <td class="position"></td>
-                    <td class="position"></td>
-                    <td class="position"></td>
-                    <td class="position"></td>
-                    <td class="position"></td>
-                </tr>
-                <tr>
-                    <th>Notes</th>
-                    <td>2000</td>
-                    <td>500</td>
-                    <td>100</td>
-                    <td>20</td>
-                    <td>10</td>
-                    <td>5</td>
-                    <td>1</td>
-                </tr>
-            </table>
-        </div>
+            <!-- error section -->
 
-    </main>
+            <p id="error-message"></p>
+
+            <!-- table -->
+            <div id="table-div">
+                <table>
+                    <caption>Change to be returned ⬇️</caption>
+                    <tr>
+                        <th>No of Notes</th>
+                        <td class="position"></td>
+                        <td class="position"></td>
+                        <td class="position"></td>
+                        <td class="position"></td>
+                        <td class="position"></td>
+                        <td class="position"></td>
+                        <td class="position"></td>
+                    </tr>
+                    <tr>
+                        <th>Notes</th>
+                        <td>2000</td>
+                        <td>500</td>
+                        <td>100</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+
+        </main>
+    </div>
+
+
 
 </body>
 
