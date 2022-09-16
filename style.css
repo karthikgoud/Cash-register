@@ -202,19 +202,27 @@ table caption{
     .details{
         font-size: 1rem;
     }
+
+    .output{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .output h3{
+        padding: 0.5rem 0;
+        font-size: 2rem;
+    }
    
     #bill-display, #cash-display{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     input{
-
         width: 50%;
         font-size: 1rem;
-
     }
 
-    
     .input-section{
         padding-bottom: 1rem;
     }
@@ -223,6 +231,11 @@ table caption{
         margin: 0.4rem;
     }
 
+    table{
+        margin-bottom: 1rem;
+    }
 
-   
+    #error-message{
+        font-size: 1rem;
+    }
 }
