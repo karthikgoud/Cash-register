@@ -170,7 +170,7 @@ table, th, td {
     text-align: center;
     font-size: larger;
     padding: 4px;
-
+    margin-bottom: 1rem;
 }
 
 th {
@@ -225,6 +225,10 @@ table caption{
 
     .input-section{
         padding-bottom: 1rem;
+    }
+
+    label{
+        font-size: 2rem;
     }
 
     .input-section input,button{
