@@ -1,10 +1,8 @@
-#  Mark-10 : Cash-register
+#  Mark-10: Cash Register Manager
 
-A Cash Register App which tells how much change should be given back with minimum number of notes.
+### A Cash Register App which tells how much change should be given back with minimum number of notes.
 
-# Live link:
-https://cash-register-2022.netlify.app/
+![image](https://user-images.githubusercontent.com/9660782/192270141-c94450fd-4fc2-43d6-900f-16fc2ca7b446.png)
 
-<img width="739" alt="image" src="https://user-images.githubusercontent.com/9660782/189159610-bcf9b47e-3be1-4689-9858-deb80bdb9ef0.png">
 
 
