@@ -5,6 +5,7 @@ const errorMessage = document.querySelector("#error-message");
 const positionOfNotes = document.querySelectorAll(".position");
 const nextButton = document.querySelector("#btn-next");
 const cashSection = document.querySelector(".hide");
+const tableDiv = document.querySelector("#table-div");
 
 const billOutput = document.querySelector("#bill-display");
 const cashOutput = document.querySelector("#cash-display");
@@ -48,6 +49,7 @@ function clickHandler() {
       cashOutput.innerHTML = `Amount to be returned: <span class ="bill-color">Rs 0.</span>`;
       showMessage("Bill is paid, Thank you. Have a good day !!!");
     } else if (Number(cashValue) >= billValue) {
+      displayOutput();
       const amountToBeReturned = Number(cashValue) - billValue;
       changeToBeReturned(amountToBeReturned);
       cashOutput.innerHTML = `Amount to be returned: <span class ="bill-color">Rs ${amountToBeReturned}.</span>`;
@@ -69,6 +71,12 @@ function changeToBeReturned(amount) {
     amount = amount % notesDinomination[i];
     positionOfNotes[i].innerText = numberOfNotes;
   }
+}
+
+function displayOutput() {
+  billOutput.style.display = "inline-block";
+  cashOutput.style.display = "inline-block";
+  tableDiv.style.display = "block";
 }
 
 function hideMessage() {

@@ -1,5 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
+
+:root{
+    --header-color:	#071930;
+    --body-color:#dedede;
+    --main-color:#6f897e;
+    --button-bg:#3b0f21;
+    --button-hover-bg:#755763;
+}
+
 
 /* Universal */
 *{
@@ -10,7 +19,7 @@
 }
 
 body{
-    background-color: lightblue;
+    background-color: var(--body-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,42 +48,49 @@ body{
 /* Header section */
 
 header{
-    background-color: darkcyan;
-    height: 10vh;
+    background-color: var(--header-color);
     width: 100%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+header h1{
+    font-size: 2.6rem;
+    padding: 0.4rem 0;
     color: white;
+
 }
 
 /* Main section */
 
 main{
-    background-color: lightblue;
+    background-color: var(--main-color);
     padding: 24px;
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
+    color: white;
+    border-radius: 0.4rem;
+
 }
 
 #bill-display, #cash-display{
-    color: darkblue;
+    font-size: 1.2rem;
 }
 
 .bill-color{
-    color: red;
+    color: aqua;
 }
 
 /* paragraph */
 .details{
-    padding: 16px 0;
-    font-size: larger;
+    padding: 0 0 1rem 0;
+    font-size: 1rem;
     text-align: center;
-    color: black;
     font-weight: 700;
 }
 
@@ -85,6 +101,7 @@ main{
 }
 .output h3{
     padding: 16px 0;
+    display: none;
     font-size: 24px;
 }
 
@@ -95,23 +112,26 @@ input{
     padding: 8px;
     border-radius: 0.4rem;
     font-size: 1.2rem;
+    text-align: center;
+    border: none;
 }
 
 button{
-    width: 25%;
-    padding: 6px;
+    padding: 0.6rem 2rem;
     border: none;
     border-radius: 4px;
     color: white;
-    font-weight: 700;
-    background: steelblue;
+    font-weight: 900;
+    background: var(--button-bg);
     justify-content: center;
 }
 
 button:hover{
     cursor: pointer;
-    background: lightgray;
+    background: white;
+    box-shadow: 0px 0px 5px;
     color: black;
+
 }
 
 .input-section{
@@ -119,7 +139,7 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2rem;
+    padding-bottom: 0.5rem;
 }
 
 .cash-section{
@@ -127,18 +147,17 @@ button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2rem;
 }
 
 label{
-    padding-bottom: 4px;
-    font-size: 20px;
-    font-weight: 700;
-    color: brown;
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding-bottom: 0.6rem;
+    color:yellow
 }
 
-.input-section input,button{
-    margin: 10px;
+#btn-next,#btn-check{
+    margin: 1rem 0;
 }
 
 /* ---error--- */
@@ -162,6 +181,7 @@ label{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    display: none;
 }
 
 table, th, td {
@@ -181,12 +201,14 @@ th {
 
 tr{
     background-color: lightgreen;
+    color: black;
+
 
 }
 
 
 table caption{
-    padding-bottom: 24px;
+    padding-bottom: 1rem;
 }
 
 /* media queries */
